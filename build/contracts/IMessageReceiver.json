@@ -1,0 +1,292 @@
+{
+  "contractName": "IMessageReceiver",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "bytes32",
+              "name": "messageId",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "fromChainId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            },
+            {
+              "internalType": "bytes",
+              "name": "payload",
+              "type": "bytes"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "tokenId",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "amount",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct Data.Token[]",
+              "name": "tokens",
+              "type": "tuple[]"
+            }
+          ],
+          "internalType": "struct Data.IncomingMessage",
+          "name": "message",
+          "type": "tuple"
+        }
+      ],
+      "name": "metreonReceive",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getMetreon",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getMetreon\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"bytes32\",\"name\":\"messageId\",\"type\":\"bytes32\"},{\"internalType\":\"uint256\",\"name\":\"fromChainId\",\"type\":\"uint256\"},{\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"payload\",\"type\":\"bytes\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"tokenId\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"internalType\":\"struct Data.Token[]\",\"name\":\"tokens\",\"type\":\"tuple[]\"}],\"internalType\":\"struct Data.IncomingMessage\",\"name\":\"message\",\"type\":\"tuple\"}],\"name\":\"metreonReceive\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/IMessageReceiver.sol\":\"IMessageReceiver\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"project:/contracts/interfaces/IMessageReceiver.sol\":{\"keccak256\":\"0xf7eefeb72e665af637a640c5deaf2e204b95b6e422e322ba5a750ce6923bd646\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://19f8249ad0d2ef012b453510b4c5622d26c65b3af23b1449e1acaefc7db23fa0\",\"dweb:/ipfs/QmYquMqeRmHBmmtwXQhMqZxU8pA4R9re31FsGbt2Zecjed\"]},\"project:/contracts/libraries/Data.sol\":{\"keccak256\":\"0xed8649fa567302b4ec880f39a1f6f3a1167caf4d75ca51a0363d8453ada27932\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://82d602e3e4819f365617a9837b6be7479be119a03270dba29fecb5b18547a823\",\"dweb:/ipfs/QmZsFFYNExHPZh62aVapeWzu6G7CJqCnzNfbYErEwLSkzJ\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.17;\r\n\r\nimport {Data} from \"../libraries/Data.sol\";\r\n\r\ninterface IMessageReceiver {\r\n    function metreonReceive(Data.IncomingMessage calldata message) external;\r\n\r\n    function getMetreon() external view returns (address);\r\n}\r\n",
+  "sourcePath": "C:\\Users\\DELL\\Documents\\metreon.xyz\\smart-contracts\\contracts\\interfaces\\IMessageReceiver.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/IMessageReceiver.sol",
+    "exportedSymbols": {
+      "Data": [
+        1452
+      ],
+      "IMessageReceiver": [
+        1160
+      ]
+    },
+    "id": 1161,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1146,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".17"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:24:7"
+      },
+      {
+        "absolutePath": "project:/contracts/libraries/Data.sol",
+        "file": "../libraries/Data.sol",
+        "id": 1148,
+        "nameLocation": "-1:-1:-1",
+        "nodeType": "ImportDirective",
+        "scope": 1161,
+        "sourceUnit": 1453,
+        "src": "61:43:7",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 1147,
+              "name": "Data",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 1452,
+              "src": "69:4:7",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IMessageReceiver",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1160,
+        "linearizedBaseContracts": [
+          1160
+        ],
+        "name": "IMessageReceiver",
+        "nameLocation": "118:16:7",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "93c08ad3",
+            "id": 1154,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "metreonReceive",
+            "nameLocation": "151:14:7",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1152,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1151,
+                  "mutability": "mutable",
+                  "name": "message",
+                  "nameLocation": "196:7:7",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1154,
+                  "src": "166:37:7",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_IncomingMessage_$1440_calldata_ptr",
+                    "typeString": "struct Data.IncomingMessage"
+                  },
+                  "typeName": {
+                    "id": 1150,
+                    "nodeType": "UserDefinedTypeName",
+                    "pathNode": {
+                      "id": 1149,
+                      "name": "Data.IncomingMessage",
+                      "nameLocations": [
+                        "166:4:7",
+                        "171:15:7"
+                      ],
+                      "nodeType": "IdentifierPath",
+                      "referencedDeclaration": 1440,
+                      "src": "166:20:7"
+                    },
+                    "referencedDeclaration": 1440,
+                    "src": "166:20:7",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_IncomingMessage_$1440_storage_ptr",
+                      "typeString": "struct Data.IncomingMessage"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "165:39:7"
+            },
+            "returnParameters": {
+              "id": 1153,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "213:0:7"
+            },
+            "scope": 1160,
+            "src": "142:72:7",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "737fb66b",
+            "id": 1159,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getMetreon",
+            "nameLocation": "231:10:7",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1155,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "241:2:7"
+            },
+            "returnParameters": {
+              "id": 1158,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1157,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1159,
+                  "src": "267:7:7",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1156,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "267:7:7",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "266:9:7"
+            },
+            "scope": 1160,
+            "src": "222:54:7",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1161,
+        "src": "108:171:7",
+        "usedErrors": []
+      }
+    ],
+    "src": "33:248:7"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.11",
+  "updatedAt": "2024-04-17T21:32:19.773Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
