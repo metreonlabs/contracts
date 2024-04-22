@@ -7,23 +7,23 @@
   "immutableReferences": {},
   "generatedSources": [],
   "deployedGeneratedSources": [],
-  "sourceMap": "61:409:17:-:0;;;;;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "61:409:17:-:0;;",
+  "sourceMap": "61:409:16:-:0;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "61:409:16:-:0;;",
   "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.17;\r\n\r\nlibrary Data {\r\n    struct Token {\r\n        address tokenId;\r\n        uint256 amount;\r\n    }\r\n\r\n    struct IncomingMessage {\r\n        bytes32 messageId;\r\n        uint256 fromChainId;\r\n        address sender;\r\n        bytes payload;\r\n        Token[] tokens;\r\n    }\r\n\r\n    struct OutgoingMessage {\r\n        uint256 toChainId;\r\n        address receiver;\r\n        bytes payload;\r\n        Token[] tokens;\r\n    }\r\n}\r\n",
   "sourcePath": "C:\\Users\\DELL\\Documents\\metreon.xyz\\smart-contracts\\contracts\\libraries\\Data.sol",
   "ast": {
     "absolutePath": "project:/contracts/libraries/Data.sol",
     "exportedSymbols": {
       "Data": [
-        2281
+        2019
       ]
     },
-    "id": 2282,
+    "id": 2020,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 2251,
+        "id": 1989,
         "literals": [
           "solidity",
           "^",
@@ -31,7 +31,7 @@
           ".17"
         ],
         "nodeType": "PragmaDirective",
-        "src": "33:24:17"
+        "src": "33:24:16"
       },
       {
         "abstract": false,
@@ -40,27 +40,27 @@
         "contractDependencies": [],
         "contractKind": "library",
         "fullyImplemented": true,
-        "id": 2281,
+        "id": 2019,
         "linearizedBaseContracts": [
-          2281
+          2019
         ],
         "name": "Data",
-        "nameLocation": "69:4:17",
+        "nameLocation": "69:4:16",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Data.Token",
-            "id": 2256,
+            "id": 1994,
             "members": [
               {
                 "constant": false,
-                "id": 2253,
+                "id": 1991,
                 "mutability": "mutable",
                 "name": "tokenId",
-                "nameLocation": "113:7:17",
+                "nameLocation": "113:7:16",
                 "nodeType": "VariableDeclaration",
-                "scope": 2256,
-                "src": "105:15:17",
+                "scope": 1994,
+                "src": "105:15:16",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -68,10 +68,10 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 2252,
+                  "id": 1990,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "105:7:17",
+                  "src": "105:7:16",
                   "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
@@ -82,13 +82,13 @@
               },
               {
                 "constant": false,
-                "id": 2255,
+                "id": 1993,
                 "mutability": "mutable",
                 "name": "amount",
-                "nameLocation": "139:6:17",
+                "nameLocation": "139:6:16",
                 "nodeType": "VariableDeclaration",
-                "scope": 2256,
-                "src": "131:14:17",
+                "scope": 1994,
+                "src": "131:14:16",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -96,10 +96,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2254,
+                  "id": 1992,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "131:7:17",
+                  "src": "131:7:16",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -109,25 +109,25 @@
               }
             ],
             "name": "Token",
-            "nameLocation": "88:5:17",
+            "nameLocation": "88:5:16",
             "nodeType": "StructDefinition",
-            "scope": 2281,
-            "src": "81:72:17",
+            "scope": 2019,
+            "src": "81:72:16",
             "visibility": "public"
           },
           {
             "canonicalName": "Data.IncomingMessage",
-            "id": 2269,
+            "id": 2007,
             "members": [
               {
                 "constant": false,
-                "id": 2258,
+                "id": 1996,
                 "mutability": "mutable",
                 "name": "messageId",
-                "nameLocation": "203:9:17",
+                "nameLocation": "203:9:16",
                 "nodeType": "VariableDeclaration",
-                "scope": 2269,
-                "src": "195:17:17",
+                "scope": 2007,
+                "src": "195:17:16",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -135,10 +135,10 @@
                   "typeString": "bytes32"
                 },
                 "typeName": {
-                  "id": 2257,
+                  "id": 1995,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
-                  "src": "195:7:17",
+                  "src": "195:7:16",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes32",
                     "typeString": "bytes32"
@@ -148,13 +148,13 @@
               },
               {
                 "constant": false,
-                "id": 2260,
+                "id": 1998,
                 "mutability": "mutable",
                 "name": "fromChainId",
-                "nameLocation": "231:11:17",
+                "nameLocation": "231:11:16",
                 "nodeType": "VariableDeclaration",
-                "scope": 2269,
-                "src": "223:19:17",
+                "scope": 2007,
+                "src": "223:19:16",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -162,10 +162,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2259,
+                  "id": 1997,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "223:7:17",
+                  "src": "223:7:16",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -175,13 +175,13 @@
               },
               {
                 "constant": false,
-                "id": 2262,
+                "id": 2000,
                 "mutability": "mutable",
                 "name": "sender",
-                "nameLocation": "261:6:17",
+                "nameLocation": "261:6:16",
                 "nodeType": "VariableDeclaration",
-                "scope": 2269,
-                "src": "253:14:17",
+                "scope": 2007,
+                "src": "253:14:16",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -189,10 +189,10 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 2261,
+                  "id": 1999,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "253:7:17",
+                  "src": "253:7:16",
                   "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
@@ -203,13 +203,13 @@
               },
               {
                 "constant": false,
-                "id": 2264,
+                "id": 2002,
                 "mutability": "mutable",
                 "name": "payload",
-                "nameLocation": "284:7:17",
+                "nameLocation": "284:7:16",
                 "nodeType": "VariableDeclaration",
-                "scope": 2269,
-                "src": "278:13:17",
+                "scope": 2007,
+                "src": "278:13:16",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -217,10 +217,10 @@
                   "typeString": "bytes"
                 },
                 "typeName": {
-                  "id": 2263,
+                  "id": 2001,
                   "name": "bytes",
                   "nodeType": "ElementaryTypeName",
-                  "src": "278:5:17",
+                  "src": "278:5:16",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes_storage_ptr",
                     "typeString": "bytes"
@@ -230,45 +230,45 @@
               },
               {
                 "constant": false,
-                "id": 2268,
+                "id": 2006,
                 "mutability": "mutable",
                 "name": "tokens",
-                "nameLocation": "310:6:17",
+                "nameLocation": "310:6:16",
                 "nodeType": "VariableDeclaration",
-                "scope": 2269,
-                "src": "302:14:17",
+                "scope": 2007,
+                "src": "302:14:16",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Token_$2256_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_Token_$1994_storage_$dyn_storage_ptr",
                   "typeString": "struct Data.Token[]"
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 2266,
+                    "id": 2004,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2265,
+                      "id": 2003,
                       "name": "Token",
                       "nameLocations": [
-                        "302:5:17"
+                        "302:5:16"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2256,
-                      "src": "302:5:17"
+                      "referencedDeclaration": 1994,
+                      "src": "302:5:16"
                     },
-                    "referencedDeclaration": 2256,
-                    "src": "302:5:17",
+                    "referencedDeclaration": 1994,
+                    "src": "302:5:16",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Token_$2256_storage_ptr",
+                      "typeIdentifier": "t_struct$_Token_$1994_storage_ptr",
                       "typeString": "struct Data.Token"
                     }
                   },
-                  "id": 2267,
+                  "id": 2005,
                   "nodeType": "ArrayTypeName",
-                  "src": "302:7:17",
+                  "src": "302:7:16",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Token_$2256_storage_$dyn_storage_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Token_$1994_storage_$dyn_storage_ptr",
                     "typeString": "struct Data.Token[]"
                   }
                 },
@@ -276,25 +276,25 @@
               }
             ],
             "name": "IncomingMessage",
-            "nameLocation": "168:15:17",
+            "nameLocation": "168:15:16",
             "nodeType": "StructDefinition",
-            "scope": 2281,
-            "src": "161:163:17",
+            "scope": 2019,
+            "src": "161:163:16",
             "visibility": "public"
           },
           {
             "canonicalName": "Data.OutgoingMessage",
-            "id": 2280,
+            "id": 2018,
             "members": [
               {
                 "constant": false,
-                "id": 2271,
+                "id": 2009,
                 "mutability": "mutable",
                 "name": "toChainId",
-                "nameLocation": "374:9:17",
+                "nameLocation": "374:9:16",
                 "nodeType": "VariableDeclaration",
-                "scope": 2280,
-                "src": "366:17:17",
+                "scope": 2018,
+                "src": "366:17:16",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -302,10 +302,10 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 2270,
+                  "id": 2008,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
-                  "src": "366:7:17",
+                  "src": "366:7:16",
                   "typeDescriptions": {
                     "typeIdentifier": "t_uint256",
                     "typeString": "uint256"
@@ -315,13 +315,13 @@
               },
               {
                 "constant": false,
-                "id": 2273,
+                "id": 2011,
                 "mutability": "mutable",
                 "name": "receiver",
-                "nameLocation": "402:8:17",
+                "nameLocation": "402:8:16",
                 "nodeType": "VariableDeclaration",
-                "scope": 2280,
-                "src": "394:16:17",
+                "scope": 2018,
+                "src": "394:16:16",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -329,10 +329,10 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 2272,
+                  "id": 2010,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
-                  "src": "394:7:17",
+                  "src": "394:7:16",
                   "stateMutability": "nonpayable",
                   "typeDescriptions": {
                     "typeIdentifier": "t_address",
@@ -343,13 +343,13 @@
               },
               {
                 "constant": false,
-                "id": 2275,
+                "id": 2013,
                 "mutability": "mutable",
                 "name": "payload",
-                "nameLocation": "427:7:17",
+                "nameLocation": "427:7:16",
                 "nodeType": "VariableDeclaration",
-                "scope": 2280,
-                "src": "421:13:17",
+                "scope": 2018,
+                "src": "421:13:16",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
@@ -357,10 +357,10 @@
                   "typeString": "bytes"
                 },
                 "typeName": {
-                  "id": 2274,
+                  "id": 2012,
                   "name": "bytes",
                   "nodeType": "ElementaryTypeName",
-                  "src": "421:5:17",
+                  "src": "421:5:16",
                   "typeDescriptions": {
                     "typeIdentifier": "t_bytes_storage_ptr",
                     "typeString": "bytes"
@@ -370,45 +370,45 @@
               },
               {
                 "constant": false,
-                "id": 2279,
+                "id": 2017,
                 "mutability": "mutable",
                 "name": "tokens",
-                "nameLocation": "453:6:17",
+                "nameLocation": "453:6:16",
                 "nodeType": "VariableDeclaration",
-                "scope": 2280,
-                "src": "445:14:17",
+                "scope": 2018,
+                "src": "445:14:16",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_array$_t_struct$_Token_$2256_storage_$dyn_storage_ptr",
+                  "typeIdentifier": "t_array$_t_struct$_Token_$1994_storage_$dyn_storage_ptr",
                   "typeString": "struct Data.Token[]"
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 2277,
+                    "id": 2015,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 2276,
+                      "id": 2014,
                       "name": "Token",
                       "nameLocations": [
-                        "445:5:17"
+                        "445:5:16"
                       ],
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 2256,
-                      "src": "445:5:17"
+                      "referencedDeclaration": 1994,
+                      "src": "445:5:16"
                     },
-                    "referencedDeclaration": 2256,
-                    "src": "445:5:17",
+                    "referencedDeclaration": 1994,
+                    "src": "445:5:16",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Token_$2256_storage_ptr",
+                      "typeIdentifier": "t_struct$_Token_$1994_storage_ptr",
                       "typeString": "struct Data.Token"
                     }
                   },
-                  "id": 2278,
+                  "id": 2016,
                   "nodeType": "ArrayTypeName",
-                  "src": "445:7:17",
+                  "src": "445:7:16",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Token_$2256_storage_$dyn_storage_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Token_$1994_storage_$dyn_storage_ptr",
                     "typeString": "struct Data.Token[]"
                   }
                 },
@@ -416,19 +416,19 @@
               }
             ],
             "name": "OutgoingMessage",
-            "nameLocation": "339:15:17",
+            "nameLocation": "339:15:16",
             "nodeType": "StructDefinition",
-            "scope": 2281,
-            "src": "332:135:17",
+            "scope": 2019,
+            "src": "332:135:16",
             "visibility": "public"
           }
         ],
-        "scope": 2282,
-        "src": "61:409:17",
+        "scope": 2020,
+        "src": "61:409:16",
         "usedErrors": []
       }
     ],
-    "src": "33:439:17"
+    "src": "33:439:16"
   },
   "compiler": {
     "name": "solc",
@@ -436,7 +436,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.11",
-  "updatedAt": "2024-04-22T02:36:49.759Z",
+  "updatedAt": "2024-04-22T13:59:50.293Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

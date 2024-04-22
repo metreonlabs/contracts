@@ -40,7 +40,7 @@ module.exports = {
     },
 
     bscTestnet: {
-      provider: () => new HDWalletProvider(MNEMONIC, 'https://bsc-testnet.public.blastapi.io'),
+      provider: () => new HDWalletProvider(MNEMONIC, 'https://bsc-testnet-rpc.publicnode.com'),
       network_id: 97,
       confirmations: 2,
       timeoutBlocks: 9999999,

@@ -128,8 +128,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [],
@@ -173,8 +172,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -216,8 +214,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -248,8 +245,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -275,8 +271,7 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function",
-      "constant": true
+      "type": "function"
     },
     {
       "inputs": [
@@ -306,7 +301,7 @@
     "absolutePath": "project:/contracts/MetreonConfig.sol",
     "exportedSymbols": {
       "IMetreonConfig": [
-        2164
+        1902
       ],
       "MetreonConfig": [
         1560
@@ -337,7 +332,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 1561,
-        "sourceUnit": 2165,
+        "sourceUnit": 1903,
         "src": "61:63:8",
         "symbolAliases": [
           {
@@ -346,7 +341,7 @@
               "name": "IMetreonConfig",
               "nodeType": "Identifier",
               "overloadedDeclarations": [],
-              "referencedDeclaration": 2164,
+              "referencedDeclaration": 1902,
               "src": "69:14:8",
               "typeDescriptions": {}
             },
@@ -391,7 +386,7 @@
                 "225:14:8"
               ],
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 2164,
+              "referencedDeclaration": 1902,
               "src": "225:14:8"
             },
             "id": 1388,
@@ -423,7 +418,7 @@
           1560,
           112,
           1027,
-          2164
+          1902
         ],
         "name": "MetreonConfig",
         "nameLocation": "208:13:8",
@@ -666,7 +661,7 @@
           },
           {
             "baseFunctions": [
-              2116
+              1854
             ],
             "body": {
               "id": 1428,
@@ -862,7 +857,7 @@
           },
           {
             "baseFunctions": [
-              2125
+              1863
             ],
             "body": {
               "id": 1455,
@@ -1021,7 +1016,7 @@
                       "name": "SetChainTokenId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2099,
+                      "referencedDeclaration": 1837,
                       "src": "890:15:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_address_$_t_address_$returns$__$",
@@ -1185,7 +1180,7 @@
           },
           {
             "baseFunctions": [
-              2132
+              1870
             ],
             "body": {
               "id": 1468,
@@ -1327,7 +1322,7 @@
           },
           {
             "baseFunctions": [
-              2139
+              1877
             ],
             "body": {
               "id": 1506,
@@ -1411,7 +1406,7 @@
                         "name": "InvalidAmount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2103,
+                        "referencedDeclaration": 1841,
                         "src": "1234:13:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_error_pure$_t_uint256_$returns$__$",
@@ -1516,7 +1511,7 @@
                         "name": "InvalidChainId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 2107,
+                        "referencedDeclaration": 1845,
                         "src": "1293:14:8",
                         "typeDescriptions": {
                           "typeIdentifier": "t_function_error_pure$_t_uint256_$returns$__$",
@@ -1655,7 +1650,7 @@
                       "name": "SetFee",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2081,
+                      "referencedDeclaration": 1819,
                       "src": "1374:6:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
@@ -1790,7 +1785,7 @@
           },
           {
             "baseFunctions": [
-              2145
+              1883
             ],
             "body": {
               "id": 1515,
@@ -1882,7 +1877,7 @@
           },
           {
             "baseFunctions": [
-              2157
+              1895
             ],
             "body": {
               "id": 1532,
@@ -1959,7 +1954,7 @@
                       "name": "SupportedChains",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2086,
+                      "referencedDeclaration": 1824,
                       "src": "1662:15:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_array$_t_uint256_$dyn_memory_ptr_$returns$__$",
@@ -2070,7 +2065,7 @@
           },
           {
             "baseFunctions": [
-              2151
+              1889
             ],
             "body": {
               "id": 1541,
@@ -2163,7 +2158,7 @@
           },
           {
             "baseFunctions": [
-              2163
+              1901
             ],
             "body": {
               "id": 1558,
@@ -2240,7 +2235,7 @@
                       "name": "SupportedTokens",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2091,
+                      "referencedDeclaration": 1829,
                       "src": "1948:15:8",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_array$_t_address_$dyn_memory_ptr_$returns$__$",
@@ -2354,8 +2349,8 @@
         "scope": 1561,
         "src": "199:1783:8",
         "usedErrors": [
-          2103,
-          2107
+          1841,
+          1845
         ]
       }
     ],
@@ -2584,8 +2579,7 @@
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2024-04-22T03:03:59.483Z",
-  "networkType": "ethereum",
+  "updatedAt": "2024-04-22T13:59:50.263Z",
   "devdoc": {
     "kind": "dev",
     "methods": {
