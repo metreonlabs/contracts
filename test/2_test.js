@@ -8,7 +8,7 @@ const AreonTokens = {
     'AREA': '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE' // Native Coin
 };
 
-const MumbaiTokens = {
+const AmoyTokens = {
     'USDT': '0x9252C5aC33132959954b7e783A1043394Dd1b083',
     'USDC': '0x81297d0e83488A4eFC074041488bB4a9B5713a0E',
     'WAREA': '0xe61C27B23970D90Bb6A0425498D41cC990B8F517',
@@ -34,10 +34,10 @@ contract('MetreonConfig', async accounts => {
     //     const trx2 = await config.setChainTokenId(56, BscTokens.BNB, AreonTokens.WBNB);
     //     const trx3 = await config.setChainTokenId(56, BscTokens.WAREA, AreonTokens.AREA);
 
-    //     const trx4 = await config.setChainTokenId(137, MumbaiTokens.USDT, AreonTokens.USDT);
-    //     const trx5 = await config.setChainTokenId(137, MumbaiTokens.USDC, AreonTokens.USDC);
-    //     const trx6 = await config.setChainTokenId(137, MumbaiTokens.MATIC, AreonTokens.WMATIC);
-    //     const trx7 = await config.setChainTokenId(137, MumbaiTokens.WAREA, AreonTokens.AREA);
+    //     const trx4 = await config.setChainTokenId(137, AmoyTokens.USDT, AreonTokens.USDT);
+    //     const trx5 = await config.setChainTokenId(137, AmoyTokens.USDC, AreonTokens.USDC);
+    //     const trx6 = await config.setChainTokenId(137, AmoyTokens.MATIC, AreonTokens.WMATIC);
+    //     const trx7 = await config.setChainTokenId(137, AmoyTokens.WAREA, AreonTokens.AREA);
 
     //     console.log(trx.tx);
     //     console.log(trx1.tx);
@@ -55,10 +55,10 @@ contract('MetreonConfig', async accounts => {
     // it('Set Chain Token Ids Polygon', async () => {
     //     const config = await MetreonConfig.deployed();
 
-    //     const trx = await config.setChainTokenId(463, AreonTokens.USDT, MumbaiTokens.USDT);
-    //     const trx1 = await config.setChainTokenId(463, AreonTokens.USDC, MumbaiTokens.USDC);
-    //     const trx2 = await config.setChainTokenId(463, AreonTokens.WMATIC, MumbaiTokens.MATIC);
-    //     const trx3 = await config.setChainTokenId(463, AreonTokens.AREA, MumbaiTokens.WAREA);
+    //     const trx = await config.setChainTokenId(463, AreonTokens.USDT, AmoyTokens.USDT);
+    //     const trx1 = await config.setChainTokenId(463, AreonTokens.USDC, AmoyTokens.USDC);
+    //     const trx2 = await config.setChainTokenId(463, AreonTokens.WMATIC, AmoyTokens.MATIC);
+    //     const trx3 = await config.setChainTokenId(463, AreonTokens.AREA, AmoyTokens.WAREA);
 
 
     //     console.log(trx.tx);

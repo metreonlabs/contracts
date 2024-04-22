@@ -48,9 +48,9 @@ module.exports = {
       networkCheckTimeout: 999999999
     },
 
-    mumbai: {
-      provider: () => new HDWalletProvider(MNEMONIC, 'https://polygon-testnet.public.blastapi.io'),
-      network_id: 80001,
+    amoy: {
+      provider: () => new HDWalletProvider(MNEMONIC, 'https://rpc-amoy.polygon.technology'),
+      network_id: 80002,
       confirmations: 2,
       timeoutBlocks: 9999999,
       skipDryRun: true,
