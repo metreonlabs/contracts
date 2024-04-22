@@ -8,10 +8,14 @@ import {IMetreon} from "./interfaces/IMetreon.sol";
 import {IMessageReceiver} from "./interfaces/IMessageReceiver.sol";
 import {IMetreonConfig} from "./interfaces/IMetreonConfig.sol";
 
-import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
+import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {ReentrancyGuard} from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-contract Metreon is IMetreon, Ownable {
+contract Metreon is IMetreon, Ownable, ReentrancyGuard {
+    using SafeERC20 for IERC20;
+
     uint256 private _sequence;
     IMetreonConfig private _config;
     mapping(bytes32 => bool) private _executed;
@@ -47,7 +51,7 @@ contract Metreon is IMetreon, Ownable {
     function sendMessage(
         Data.OutgoingMessage calldata message,
         address tokenPool
-    ) external payable returns (bytes32) {
+    ) external payable nonReentrant returns (bytes32) {
         bytes32 combinedMsgIndex = (Hash.addressToBytes32(_msgSender()) << 96) |
             bytes32(_sequence);
 
@@ -64,7 +68,7 @@ contract Metreon is IMetreon, Ownable {
                 payable(tokenPool).transfer(msg.value);
             } else {
                 IERC20 tokenContract = IERC20(token.tokenId);
-                tokenContract.transferFrom(
+                tokenContract.safeTransferFrom(
                     _msgSender(),
                     tokenPool,
                     token.amount

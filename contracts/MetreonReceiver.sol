@@ -5,7 +5,6 @@ import {Data} from "./libraries/Data.sol";
 import {IMessageReceiver} from "./interfaces/IMessageReceiver.sol";
 import {IMetreonConfig} from "./interfaces/IMetreonConfig.sol";
 
-import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 import {Context} from "@openzeppelin/contracts/utils/Context.sol";
 

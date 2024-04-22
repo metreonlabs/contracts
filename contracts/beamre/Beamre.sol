@@ -6,8 +6,12 @@ import {IMetreon} from "../interfaces/IMetreon.sol";
 import {MetreonReceiver} from "../MetreonReceiver.sol";
 
 import {IERC20} from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+import {SafeERC20} from "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
+import {ReentrancyGuard} from "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
-contract Beamre is MetreonReceiver {
+contract Beamre is MetreonReceiver, ReentrancyGuard {
+    using SafeERC20 for IERC20;
+
     IMetreon private _metreon;
 
     mapping(address => bytes32[]) public _actions;
@@ -28,7 +32,7 @@ contract Beamre is MetreonReceiver {
         uint256 toChainId,
         Data.Token[] memory tokens,
         address tokenPool
-    ) external payable {
+    ) external payable nonReentrant {
         Data.OutgoingMessage memory message = Data.OutgoingMessage({
             toChainId: toChainId,
             receiver: _contracts[toChainId],
@@ -41,13 +45,13 @@ contract Beamre is MetreonReceiver {
 
             IERC20 tokenContract = IERC20(token.tokenId);
 
-            tokenContract.transferFrom(
+            tokenContract.safeTransferFrom(
                 _msgSender(),
                 address(this),
                 token.amount
             );
 
-            tokenContract.approve(address(_metreon), token.amount);
+            tokenContract.safeApprove(address(_metreon), token.amount);
         }
 
         uint256 fee = _metreon.estimateFee(toChainId);
@@ -74,7 +78,7 @@ contract Beamre is MetreonReceiver {
                 payable(receiver).transfer(token.amount);
             } else {
                 IERC20 tokenContract = IERC20(token.tokenId);
-                tokenContract.transfer(receiver, token.amount);
+                tokenContract.safeTransfer(receiver, token.amount);
             }
         }
     }
