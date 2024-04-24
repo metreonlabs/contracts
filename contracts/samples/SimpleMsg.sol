@@ -17,11 +17,11 @@ contract SimpleMsg is MetreonReceiver {
     event NewMessage(address sender, address receiver, string text);
 
     // Testnet contracts - https://docs.metreon.xyz/developers/testnet
-    address public constant CONFIG = 0x824B50926Bdd3019F926F3E5597d1277113Fa086;
-    address public constant METREON =
-        0x0Ee37Cf3AB1C11F98A6D9f56979f3B5E3c308070;
 
-    constructor() MetreonReceiver(CONFIG, METREON) {
+    constructor(
+        address config_,
+        address metreon_
+    ) MetreonReceiver(config_, metreon_) {
         // Initialize metreon contract
         _metreon = IMetreon(getMetreon());
     }

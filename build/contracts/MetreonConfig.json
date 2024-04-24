@@ -128,7 +128,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -172,7 +173,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -214,7 +216,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -245,7 +248,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -271,7 +275,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -2362,6 +2367,12 @@
   },
   "networks": {
     "56": {
+      "events": {},
+      "links": {},
+      "address": "0xC2a2027ffc84a07c42a897D00bb585E3Ddd3F742",
+      "transactionHash": "0x75c3e1a343a0bb591fbe4101343a8728c05f86f9d8b8f24864b973d17a6f41ad"
+    },
+    "97": {
       "events": {
         "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
           "anonymous": false,
@@ -2454,26 +2465,104 @@
         }
       },
       "links": {},
-      "address": "0xE911187DA56c8bE3A034d2a763e9AE114Eaf87Ea",
-      "transactionHash": "0x3df58684e613cf59420c922929fc83b4e04818c5605cb201ccf6060a0099a8bd"
-    },
-    "97": {
-      "events": {},
-      "links": {},
-      "address": "0x824B50926Bdd3019F926F3E5597d1277113Fa086",
-      "transactionHash": "0x98fecea1c56d35abe1be93b6d176b9f212edf54191a82d1b3ad80f4e537bda36"
-    },
-    "137": {
-      "events": {},
-      "links": {},
-      "address": "0xE1a3C9201ffFc2b4333A80165C4b0dcef715224a",
-      "transactionHash": "0x1d28148585affe5e7886b29797755ec69066e07b2044ef982579aadb60ddb1ff"
+      "address": "0xC2a2027ffc84a07c42a897D00bb585E3Ddd3F742",
+      "transactionHash": "0x7a5264a6635387d9662589db12c7aa9bfaeeeaabb8b80e5432df073afeb72eb0"
     },
     "462": {
-      "events": {},
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0x1cffd3e976bc822e6df68a8d7cc8fc412365a73b3a4abb6df213f4af9ba8d4ad": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "chainId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "tokenId",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "chainTokenId",
+              "type": "address"
+            }
+          ],
+          "name": "SetChainTokenId",
+          "type": "event"
+        },
+        "0x032dc6a2d839eb179729a55633fdf1c41a1fc4739394154117005db2b354b9b5": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "toChainId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "SetFee",
+          "type": "event"
+        },
+        "0x56aef294adb176650719ad99c27cf178915205af226a58c6f0e4c9bacc1b7466": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256[]",
+              "name": "chains",
+              "type": "uint256[]"
+            }
+          ],
+          "name": "SupportedChains",
+          "type": "event"
+        },
+        "0x023c0bbef93212a062a8b51d82c40fb6d8396cedf38372bf67778810697c7b29": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address[]",
+              "name": "chains",
+              "type": "address[]"
+            }
+          ],
+          "name": "SupportedTokens",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x824B50926Bdd3019F926F3E5597d1277113Fa086",
-      "transactionHash": "0x85d7d97a6c3476254785f32bf5a2f36b752fdaca25a7e539e8cd86aa42cb8fa8"
+      "address": "0xC2a2027ffc84a07c42a897D00bb585E3Ddd3F742",
+      "transactionHash": "0xa908a10ecdd3293b200ac68cda9e55c2974eeb127cbe744325757322b15095d0"
     },
     "463": {
       "events": {
@@ -2568,18 +2657,109 @@
         }
       },
       "links": {},
-      "address": "0x2372cE673a62640b17e7e6b8421cC82742e34d5a",
-      "transactionHash": "0xbffaa2d3ee38c077d2905174c9d081bc442afeca012b5624c5aa7ca07850ffb9"
+      "address": "0xC2a2027ffc84a07c42a897D00bb585E3Ddd3F742",
+      "transactionHash": "0x7e1a8f7236fb669a49660fce2d1634c2e5accf5c91fb63e11c642417d36ae20e"
     },
     "80002": {
-      "events": {},
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0x1cffd3e976bc822e6df68a8d7cc8fc412365a73b3a4abb6df213f4af9ba8d4ad": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "chainId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "tokenId",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "chainTokenId",
+              "type": "address"
+            }
+          ],
+          "name": "SetChainTokenId",
+          "type": "event"
+        },
+        "0x032dc6a2d839eb179729a55633fdf1c41a1fc4739394154117005db2b354b9b5": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "toChainId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "SetFee",
+          "type": "event"
+        },
+        "0x56aef294adb176650719ad99c27cf178915205af226a58c6f0e4c9bacc1b7466": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256[]",
+              "name": "chains",
+              "type": "uint256[]"
+            }
+          ],
+          "name": "SupportedChains",
+          "type": "event"
+        },
+        "0x023c0bbef93212a062a8b51d82c40fb6d8396cedf38372bf67778810697c7b29": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address[]",
+              "name": "chains",
+              "type": "address[]"
+            }
+          ],
+          "name": "SupportedTokens",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x824B50926Bdd3019F926F3E5597d1277113Fa086",
-      "transactionHash": "0xb77063ece48c597da02b39deff67eb76d029b5f3108af4dd70e7e1414536cb2b"
+      "address": "0xC2a2027ffc84a07c42a897D00bb585E3Ddd3F742",
+      "transactionHash": "0x31d44814d20cd8cde249a7d176bcd6fbf84fc4d7d9ca892814e073cf0f11e8ae"
     }
   },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2024-04-22T13:59:50.263Z",
+  "updatedAt": "2024-04-24T07:16:10.326Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {

@@ -13,7 +13,7 @@ module.exports = {
 
   networks: {
     bsc: {
-      provider: () => new HDWalletProvider(MNEMONIC, 'https://bsc-dataseed4.defibit.io'),
+      provider: () => new HDWalletProvider(MNEMONIC, 'https://bsc-dataseed4.bnbchain.org'),
       network_id: 56,
       confirmations: 2,
       timeoutBlocks: 9999999,
@@ -22,7 +22,7 @@ module.exports = {
     },
 
     polygon: {
-      provider: () => new HDWalletProvider(MNEMONIC, 'https://polygon.llamarpc.com'),
+      provider: () => new HDWalletProvider(MNEMONIC, 'https://polygon.meowrpc.com'),
       network_id: 137,
       confirmations: 2,
       timeoutBlocks: 9999999,
