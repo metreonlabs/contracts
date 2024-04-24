@@ -40,8 +40,8 @@ contract('SimpleMsg', async accounts => {
     it('Message Bridge', async () => {
         const simpleMsg = await SimpleMsg.deployed();
 
-        const trx = await simpleMsg.sendMessage(463, "Welcome to metreon! at " + Date.now(), accounts[1], {
-            value: "830000000000000"
+        const trx = await simpleMsg.sendMessage(80002, "Welcome to metreon! at " + Date.now(), accounts[1], {
+            value: "100000000000000000"
         });
 
         console.log(trx.tx);
